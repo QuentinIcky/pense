@@ -1,0 +1,24 @@
+$bp-m: 860px;
+$bp-l: 960px;
+
+$black: #080808;
+$blackBlue: #0b1321;
+$yellow: #ffc107;
+$white: #f7f7f7;
+$grey: #404040;
+
+$height: 700px;
+
+$sectionPadding: 40px 20px;
+
+$border: 4px solid $blackBlue;
+//$border: 4px solid $black;
+$smallRadius: 5.333333vw;
+
+@mixin absolute($position, $top, $right, $bottom, $left) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
