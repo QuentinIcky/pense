@@ -1,0 +1,89 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.home {
+    width: 100%;
+    
+    &-first {
+        position: relative;
+        justify-content: center;
+        height: 80vh;
+
+        &-block {
+            height: 100%;
+            width: 35%;
+            padding: 30px 40px;
+            text-align: right;
+            h1 {
+                font-size: 5rem;
+            }
+            h2 {
+                font-size: 2rem;
+                strong {
+                    display: inline-block;
+                    font-size: 3rem;
+                    color: red;
+                }
+            }
+
+            &:last-child {
+                position: relative;
+                width: 65%;
+                background-image: url('../../../../public/img/pense-intro2.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 550px auto;
+            }
+        
+            &-encart {
+                position: absolute;
+                right: 0;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 95%;
+                max-width: 750px;
+                padding: 30px 15px;
+                background: rgba($red, .7);
+                color: $white;
+                text-align: center;
+
+                .btn {
+                    display: block;
+                    margin: 15px auto 0;
+                }
+            }
+        }
+    }
+
+    &-collections {
+        background-color: #fff;
+        width: 100%;
+        padding: 40px 20px;
+
+        &-slide {
+            position: relative;
+            background: $white;
+            width: 33.333%;
+            max-width: 350px;
+            margin: 0 auto;
+            border-radius: 15px;
+            padding: 0 0 15px;
+            box-shadow: 0 3px 9px rgba(#000, 25);
+            &::after {
+                content: '';
+                background-color: red;
+                @include abslute(absolute, 0, 0, auto, 0);
+            }
+            &-pict {
+                width: 100%;
+            }
+            p {
+                margin: 15px auto;
+                max-width: 70%;
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,7 @@
+@mixin abslute($position, $top, $right, $bottom, $left) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+  }
