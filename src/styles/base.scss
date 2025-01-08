@@ -43,9 +43,12 @@ html, body {
 
 .title {
   @extend .uppercase;
-  font-family: 'Anton', sans-serif;
+  // font-family: 'Anton', sans-serif;
   letter-spacing: 1px;
-  font-style: italic;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 

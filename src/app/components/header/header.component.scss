@@ -1,0 +1,41 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.header {
+    @include absolute(fixed, 0, 0, auto, 0);
+    z-index: 9;
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px 15px;
+    background-color: $white;
+    border-bottom: 1px solid rgb($black, .3);
+    
+    a {
+        margin: 0 10px;
+        transition: .3s;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: $black;
+            transition: .3s;
+        }
+
+        &:hover {
+            letter-spacing: 1px;
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &-logo {
+        width: 200px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
