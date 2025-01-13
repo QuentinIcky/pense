@@ -60,15 +60,23 @@ html, body {
   background-color: #fff;
   color: #000;
   border: $border;
+  border-color: $black;
   text-align: center;
   font-weight: bold;
   letter-spacing: .3px;
-  font-size: .9rem;
+  font-size: .8rem;
+  transition: .3s ease-in-out;
 
   @media screen and (min-width: $bp-m) {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 20px 50px;
     letter-spacing: 1px;
+
+    &:hover {
+      // color: goldenrod;
+      border-color: goldenrod;
+      letter-spacing: 2px;
+    }
   }
 
   img {

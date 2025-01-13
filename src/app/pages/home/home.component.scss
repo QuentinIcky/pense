@@ -7,13 +7,16 @@
     &-first {
         position: relative;
         justify-content: center;
-        height: 80vh;
+        height: 100vh;
 
         &-block {
+            position: relative;
             height: 100%;
             width: 35%;
             padding: 30px 40px;
             text-align: right;
+
+
             h1 {
                 font-size: 5rem;
             }
@@ -22,17 +25,27 @@
                 strong {
                     display: inline-block;
                     font-size: 3rem;
-                    color: red;
+                    color: goldenrod;
                 }
             }
 
             &:last-child {
                 position: relative;
                 width: 65%;
-                background-image: url('../../../../public/img/pense-intro2.jpg');
+                background-image: url('../../../../public/img/pense-intro4.png');
                 background-repeat: no-repeat;
                 background-position: center;
-                background-size: 550px auto;
+                background-size: 600px auto;
+                z-index: 1;
+
+                // &::after {
+                //     content: '';
+                //     @include absolute(absolute, 10px, 50px, 50px, 130px);
+                //     background: none;
+                //     border: $border;
+                //     border-color: goldenrod;
+                //     z-index: -1;
+                // }
             }
         
             &-encart {
@@ -44,8 +57,9 @@
                 width: 95%;
                 max-width: 750px;
                 padding: 30px 15px;
-                background: rgba($red, .9);
-                color: $white;
+                background: rgba($white, .9);
+                border: 3px solid $black;
+                color: $black;
                 text-align: center;
 
                 .btn {
@@ -57,8 +71,13 @@
     }
 
     &-about {
+        position: relative;
+        overflow: hidden;
         padding: 90px 20px;
         background-color: $black;
+        background-image: url("https://www.transparenttextures.com/patterns/buried.png");
+        background-attachment: fixed;
+        background-position: center;
 
         &-pict {
             width: 250px;
@@ -71,55 +90,74 @@
             font-size: 1.3rem;
             color: $white;
             margin: 30px auto 0;
+            font-weight: 400;
             line-height: 1.6rem;
 
             strong {
                 display: inline-block;
                 font-size: 2rem;
                 font-weight: bold;
+                color: goldenrod;
             }
         }
     }
 
     &-collections {
         width: 100%;
-        
-        // &-title {
-        //     text-align: center;
-        //     margin: 40px auto;
-        //     font-size: 4rem;
-        // }
+        border-bottom: 100px solid $black;
 
         &-slide {
             position: relative;
             align-items: flex-end;
             width: 100%;
-            height: 350px;
-            background-image: url('/img/latrempe.jpeg');
-            background-size: 50% auto;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: left center;
-            margin: 0 auto;
-            padding: 0 0 15px;
+            height: 400px;
+            margin: 0;
+            border-bottom: 5px solid $black;
+            // padding: 0 0 15px;
 
             &:nth-child(even) {
-                background-position: right center;
-                align-items: flex-start;
+                flex-direction: row-reverse;
+
+                .cover {
+                    background-position: center;
+                }
             }
 
-            p {
-                width: 50%;
-                font-size: 1.2rem;
-                text-align: right;
-                padding: 0 25px;
-                text-align: center;
+            &-block {
+                width: 40%;
+                height: 100%;
 
-                strong {
-                    display: block;
-                    font-size: 1.4rem;
+                &.cover {
+                    width: 60%;
+                    background-image: url('/img/espace.jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-position: left center;
                 }
 
+                &.cover2 {
+                    background-image: url('/img/oldschool.jpg');
+                }
+                &.cover3 {
+                    background-image: url('/img/desert.jpg');
+                }
+
+                h2 {
+                    font-size: 1.4rem;
+
+                    strong {
+                        display: inline-block;
+                        font-weight: bold;
+                        color: goldenrod;
+                    }
+                }
+                p {
+                    font-size: 1.2rem;
+                    text-align: right;
+                    margin: 15px auto 25px;
+                    text-align: center;
+                }
                 .btn {
                     display: block;
                     margin: 10px auto 0;
@@ -142,17 +180,25 @@
             margin-top: 50px;
 
             &-item {
-                // padding: 20px;
-                max-width: 30.333%;
-                margin: 0 15px 60px;
+                max-width: 25%;
+                margin: 0 15px 100px;
                 border: 3px solid transparent;
                 transition: .3s;
 
                 &:hover {
-                    transform: scale(1.1);
+                    transform: scale(1.05);
 
                     img {
                         box-shadow: 0 5px 9px rgba(#000, .5);
+                        border: 0px solid transparent;
+                        padding: 0;
+                    }
+
+                    hr {
+                        width: 30%;
+                    }
+                    p {
+                        letter-spacing: 1.5px;
                     }
                 }
 
@@ -161,12 +207,28 @@
                     width: 80%;
                     margin: 0 auto;
                     transition: .3s;
+                    border: 2px solid $black;
+                    padding: 10px;
+                }
+
+                hr {
+                    display: block;
+                    width: 90%;
+                    height: 1px;
+                    background: $black;
+                    margin: 25px auto;
+                    transition: .3s;
                 }
 
                 p {
                     text-align: center;
                     font-size: 1.2rem;
-                    margin-top: 20px;
+                    white-space: nowrap;
+                    transition: .3s;
+                    
+                    strong {
+                        color: goldenrod;
+                    }
                 }
             }
         }
