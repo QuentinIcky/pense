@@ -1,5 +1,14 @@
 @import './variables.scss';
 
+
+@font-face {
+  font-family: 'gagkline';
+  src: url('/fonts/gagkline.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 html {
   &.ios {
     //  --vh: 5.53px;
@@ -29,6 +38,10 @@ html, body {
   }
 }
 
+.gagkline {
+  font-family: 'gagkline';
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -43,7 +56,6 @@ html, body {
 
 .title {
   @extend .uppercase;
-  // font-family: 'Anton', sans-serif;
   letter-spacing: 1px;
 }
 
@@ -51,6 +63,9 @@ html, body {
   cursor: pointer;
 }
 
+h1, h2, h3, h4 {
+  @extend .gagkline;
+}
 
 .btn {
   @extend .flex;
