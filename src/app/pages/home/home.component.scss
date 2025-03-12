@@ -4,6 +4,9 @@
 .home {
     width: 100%;
     padding-bottom: 80px;
+    background-image: url("https://www.transparenttextures.com/patterns/buried.png");
+        background-attachment: fixed;
+        background-position: center;
 
     &-title {
         font-size: 5rem;
@@ -56,7 +59,7 @@
                 max-width: 750px;
                 padding: 30px 15px;
                 background: rgba($white, .9);
-                border: 3px solid $black;
+                border: 3px solid $yellow;
                 color: $black;
                 text-align: center;
 
@@ -79,10 +82,7 @@
         position: relative;
         overflow: hidden;
         padding: 90px 20px;
-        background-color: $black;
-        background-image: url("https://www.transparenttextures.com/patterns/buried.png");
-        background-attachment: fixed;
-        background-position: center;
+        // background-color: $black;
 
         &-pict {
             width: 250px;
@@ -109,7 +109,7 @@
 
     &-collections {
         width: 100%;
-        border-bottom: 100px solid $black;
+        border-bottom: 100px solid $yellow;
         padding: 30px 0 0;
 
         &-title {
@@ -122,7 +122,7 @@
             width: 100%;
             height: 400px;
             margin: 0;
-            border-bottom: 5px solid $black;
+            border-bottom: 5px solid $yellow;
             // padding: 0 0 15px;
 
             &:nth-child(even) {
@@ -216,7 +216,7 @@
                     width: 80%;
                     margin: 0 auto;
                     transition: .3s;
-                    border: 2px solid $black;
+                    border: 2px solid $white;
                     padding: 10px;
                 }
 
@@ -224,7 +224,7 @@
                     display: block;
                     width: 90%;
                     height: 1px;
-                    background: $black;
+                    background: $white;
                     margin: 25px auto;
                     transition: .3s;
                 }
@@ -244,7 +244,7 @@
     }
 
     &-contact {
-        background-color: $black;
+        background-color: $white;
         color: $white;
         padding: 50px 30px;
 

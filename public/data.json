@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Projet Alpha",
+    "cover": "/img/alpha.jpg",
+    "clips": [
+      "https://www.youtube.com/watch?v=123abc",
+      "https://www.youtube.com/watch?v=456def"
+    ],
+    "linktree": "https://linktr.ee/alpha",
+    "notes": "Un projet innovant mélangeant plusieurs styles musicaux.",
+    "link": "/projet-alpha"
+  },
+  {
+    "title": "Projet Beta",
+    "cover": "/img/beta.jpg",
+    "clips": [
+      "https://www.youtube.com/watch?v=789ghi",
+      "https://www.youtube.com/watch?v=012jkl"
+    ],
+    "linktree": "https://linktr.ee/beta",
+    "notes": "Un album expérimental aux sonorités électroniques et organiques.",
+    "link": "/projet-beta"
+  },
+  {
+    "title": "Projet Gamma",
+    "cover": "/img/gamma.jpg",
+    "clips": [
+      "https://www.youtube.com/watch?v=345mno",
+      "https://www.youtube.com/watch?v=678pqr"
+    ],
+    "linktree": "https://linktr.ee/gamma",
+    "notes": "Des collaborations uniques entre artistes de divers horizons.",
+    "link": "/projet-gamma"
+  },
+  {
+    "title": "Projet Delta",
+    "cover": "/img/delta.jpg",
+    "clips": [
+      "https://www.youtube.com/watch?v=901stu",
+      "https://www.youtube.com/watch?v=234vwx"
+    ],
+    "linktree": "https://linktr.ee/delta",
+    "notes": "Un EP qui revisite les classiques avec une touche moderne.",
+    "link": "/projet-delta"
+  },
+  {
+    "title": "Projet Epsilon",
+    "cover": "/img/epsilon.jpg",
+    "clips": [
+      "https://www.youtube.com/watch?v=567yzA",
+      "https://www.youtube.com/watch?v=890BCd"
+    ],
+    "linktree": "https://linktr.ee/epsilon",
+    "notes": "Une immersion sonore unique entre l'analogique et le digital.",
+    "link": "/projet-epsilon"
+  },
+  {
+    "title": "Projet Zeta",
+    "cover": "/img/zeta.jpg",
+    "clips": [
+      "https://www.youtube.com/watch?v=321EFG",
+      "https://www.youtube.com/watch?v=654HIJ"
+    ],
+    "linktree": "https://linktr.ee/zeta",
+    "notes": "Un concept album basé sur les émotions humaines.",
+    "link": "/projet-zeta"
+  }
+]
