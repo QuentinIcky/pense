@@ -21,7 +21,6 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('============= ininininini')
   }
 
   private start(): void {
@@ -36,7 +35,7 @@ export class HomeComponent implements OnInit {
   }
 
   public redirect(projet: any): void {
-    this.router.navigate([projet.link, { state: { projet: projet } }]);
+    this.router.navigate([`/projets/${projet.id}`]);
   }
 
 }

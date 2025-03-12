@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Router } from 'express';
+import { CommonModule } from '@angular/common';
+// import { Router } from 'express';
 
 
 @Component({
   selector: 'app-collection',
   standalone: true,
-  imports: [],
+    imports: [CommonModule],
   templateUrl: './collection.component.html',
   styleUrl: './collection.component.scss'
 })
@@ -18,7 +19,8 @@ export class CollectionComponent implements OnInit {
   private sub: any;
 
 
-  constructor( private router: Router, private route: ActivatedRoute) {}
+  constructor( private route: ActivatedRoute) {
+  }
 
   ngOnInit(): void {
     // Récupérer le paramètre de l'URL

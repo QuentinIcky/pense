@@ -1,0 +1,67 @@
+@import '../../../styles/variables.scss';
+
+.project {
+  padding: 100px 30px;
+  border: 3px solid red;
+
+  &-title {
+    font-size: 4rem;
+  }
+
+  &-cover {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+  }
+
+  &-note {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  &-clips {
+    width: 100%;
+    margin-top: 50px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    /* Assure un défilement avec des arrêts fixes */
+    gap: 20px;
+    /* Espace entre les éléments */
+    padding: 20px 0;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 200px;
+    }
+
+    &-item {
+      margin-bottom: 10px;
+      flex-shrink: 0;
+      /* Empêche les éléments de se rétrécir */
+      width: 560px;
+      height: 315px;
+      scroll-snap-align: center;
+
+      .iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  &-sliderCtrl {
+    width: 50px;
+    height: 50px;
+    background-color: $yellow;
+    border-radius: 100%;
+    font-size: 2rem;
+    margin: 0 20px;
+  }
+
+  &-link {
+    border: 2px solid #fff;
+    padding: 15px 30px;
+    margin: 30px auto;
+  }
+}

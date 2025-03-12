@@ -1,0 +1,24 @@
+<section class="flex column center project" *ngIf="currentProject">
+  <h2 class="project-title">{{currentProject.title}}</h2>
+
+  <img src="{{currentProject.cover}}" alt="" class="project-cover">
+
+  <p class="project-note">{{currentProject.notes}}</p>
+
+  <ul class="flex center project-clips">
+    <li class="project-clips-item" *ngFor="let clip of currentProject.clips">
+      <iframe class="iframe" [attr.src]="getYoutubeEmbedUrl(clip)" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </li>
+  </ul>
+
+  <div class="flex center">
+    <button class="project-sliderCtrl prev" (click)="moveSlider('prev')">
+      < 
+    </button>
+    <button class="project-sliderCtrl next" (click)="moveSlider('next')"> > </button>
+  </div>
+
+  <a href="{{currentProject.linktree}}" class="project-link">Écouter l'album</a>
+</section>

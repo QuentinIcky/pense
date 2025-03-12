@@ -1,68 +1,68 @@
 [
   {
     "title": "Projet Alpha",
-    "cover": "/img/alpha.jpg",
+    "id": "Alpha",
+    "cover": "img/latrempe.jpeg",
     "clips": [
-      "https://www.youtube.com/watch?v=123abc",
-      "https://www.youtube.com/watch?v=456def"
+      "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
     ],
     "linktree": "https://linktr.ee/alpha",
     "notes": "Un projet innovant mélangeant plusieurs styles musicaux.",
-    "link": "/projet-alpha"
+    "link": "projet-alpha"
   },
   {
     "title": "Projet Beta",
-    "cover": "/img/beta.jpg",
+    "id": "Beta",
+    "cover": "img/latrempe.jpeg",
     "clips": [
-      "https://www.youtube.com/watch?v=789ghi",
-      "https://www.youtube.com/watch?v=012jkl"
+      "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
     ],
     "linktree": "https://linktr.ee/beta",
     "notes": "Un album expérimental aux sonorités électroniques et organiques.",
-    "link": "/projet-beta"
+    "link": "projet-beta"
   },
   {
     "title": "Projet Gamma",
-    "cover": "/img/gamma.jpg",
+    "id": "Gamma",
+    "cover": "img/latrempe.jpeg",
     "clips": [
-      "https://www.youtube.com/watch?v=345mno",
-      "https://www.youtube.com/watch?v=678pqr"
+      "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
     ],
     "linktree": "https://linktr.ee/gamma",
     "notes": "Des collaborations uniques entre artistes de divers horizons.",
-    "link": "/projet-gamma"
+    "link": "projet-gamma"
   },
   {
     "title": "Projet Delta",
-    "cover": "/img/delta.jpg",
+    "id": "Delta",
+    "cover": "img/latrempe.jpeg",
     "clips": [
-      "https://www.youtube.com/watch?v=901stu",
-      "https://www.youtube.com/watch?v=234vwx"
+      "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
     ],
     "linktree": "https://linktr.ee/delta",
     "notes": "Un EP qui revisite les classiques avec une touche moderne.",
-    "link": "/projet-delta"
+    "link": "projet-delta"
   },
   {
     "title": "Projet Epsilon",
-    "cover": "/img/epsilon.jpg",
+    "id": "Epsilon",
+    "cover": "img/latrempe.jpeg",
     "clips": [
-      "https://www.youtube.com/watch?v=567yzA",
-      "https://www.youtube.com/watch?v=890BCd"
+      "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
     ],
     "linktree": "https://linktr.ee/epsilon",
     "notes": "Une immersion sonore unique entre l'analogique et le digital.",
-    "link": "/projet-epsilon"
+    "link": "projet-epsilon"
   },
   {
     "title": "Projet Zeta",
-    "cover": "/img/zeta.jpg",
+    "id": "Zeta",
+    "cover": "img/latrempe.jpeg",
     "clips": [
-      "https://www.youtube.com/watch?v=321EFG",
-      "https://www.youtube.com/watch?v=654HIJ"
+      "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
     ],
     "linktree": "https://linktr.ee/zeta",
     "notes": "Un concept album basé sur les émotions humaines.",
-    "link": "/projet-zeta"
+    "link": "projet-zeta"
   }
 ]
