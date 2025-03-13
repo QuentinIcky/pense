@@ -9,8 +9,16 @@
     padding: 20px 15px;
     background-color: $white;
     border-bottom: 1px solid rgb($black, .3);
+
+    &.scrolled {
+        padding: 10px;
+        .header-logo {
+        width: 100px;
+      }
+    }
     
     a {
+        color: $black;
         margin: 0 10px;
         transition: .3s;
 
@@ -33,6 +41,7 @@
 
     &-logo {
         width: 200px;
+        transition: .3s ease-in-out;
 
         img {
             width: 100%;

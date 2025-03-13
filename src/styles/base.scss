@@ -57,6 +57,7 @@ html, body {
 .title {
   @extend .uppercase;
   letter-spacing: 1px;
+  color: $yellow;
 }
 
 .pointer {

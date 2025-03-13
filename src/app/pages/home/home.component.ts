@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
 
   private route = 'data.json';
   public projets:Array<any> = [];
+  public collections:Array<any> = [];
 
   constructor(public router: Router) {
     this.start();
@@ -29,13 +30,16 @@ export class HomeComponent implements OnInit {
       return response.json()
     })
     .then(data => {
-      this.projets = data;
-      console.log(this.projets);
+      this.projets = data[0].projects;
+      this.collections = data[1].collections;
+      console.log('projets : ', this.projets);
+      console.log('collections : ', this.collections);
     });
   }
 
-  public redirect(projet: any): void {
-    this.router.navigate([`/projets/${projet.id}`]);
+  public redirect(type:string, projet: any): void {
+    this.router.navigate([`/${type}/${projet.id}`]);
+    window.scroll(0,0);
   }
 
 }

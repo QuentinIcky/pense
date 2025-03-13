@@ -7,14 +7,12 @@
     <div class="flex column center home-first-block">
       <div class="home-first-block-encart">
         <p class="home-first-title">Découvre la collection <strong class="gagkline">«ESPACE»</strong></p>
-        <button class="btn">Découvrir</button>
+        <a *ngIf="collections.length" routerLink="/collections/{{collections[0].link}}" class="btn">Découvrir</a>
       </div>
     </div>
   </div>
 
   <div class="flex column center home-about">
-
-    <!-- <iframe src="//www.beatstars.com/embed/track/?id=21744385" width="100%" height="140" style="border: none;"></iframe> -->
 
     <img class="home-about-pict" src="img/pense-bio.jpg" alt="Pense" />
     <p class="home-about-desc">
@@ -26,37 +24,27 @@
 
   <div class="home-collections">
     <h2 class="home-collections-title home-title uppercase">Collections.</h2>
-    <div class="flex center home-collections-slide">
-      <div class="home-collections-slide-block cover cover1"></div>
+    
+    <div class="flex center home-collections-slide"
+    *ngFor="let collection of collections"
+    (click)="redirect('collections', collection)">
+      <div class="home-collections-slide-block cover">
+        <img src="{{collection.cover}}" alt="">
+      </div>
       <div class="flex column center home-collections-slide-block">
-        <h3>Collection <strong class="uppercase">Espace</strong> :</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
+        <h3 class="title uppercase">{{collection.title}} :</h3>
+        <p>{{collection.notes}}</p>
         <button class="btn">Découvrir</button>
       </div>
     </div>
-    <div class="flex center home-collections-slide">
-      <div class="home-collections-slide-block cover cover2"></div>
-      <div class="flex column center home-collections-slide-block">
-        <h3>Collection <strong class="uppercase">Désert</strong> :</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
-        <button class="btn">Découvrir</button>
-      </div>
-    </div>
-    <div class="flex center home-collections-slide">
-      <div class="home-collections-slide-block cover cover3"></div>
-      <div class="flex column center home-collections-slide-block">
-        <h3>Collection <strong class="uppercase">Old School</strong> :</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing</p>
-        <button class="btn">Découvrir</button>
-      </div>
-    </div>
+
   </div>
 
 
   <div class="home-news">
     <h2 class="home-title uppercase home-news-title">Projets :</h2>
     <ul class="flex center home-news-list" *ngIf="projets">
-      <li class="home-news-list-item pointer" (click)="redirect(projet)" *ngFor="let projet of projets">
+      <li class="home-news-list-item pointer" (click)="redirect('projets', projet)" *ngFor="let projet of projets">
         <img src="img/lachauffe.jpg" alt="la chauffe" />
         <hr />
         <p><strong>{{projet.title}}</strong></p>

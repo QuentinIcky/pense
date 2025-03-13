@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Projet Alpha",
+    "id": "Alpha",
+    "cover": "img/latrempe.jpeg",
+    "clips": [
+      "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
+    ],
+    "linktree": "https://linktr.ee/alpha",
+    "notes": "Un projet innovant mélangeant plusieurs styles musicaux.",
+    "link": "projet-alpha"
+  },
+  {
+    "title": "Projet Beta",
+    "id": "Beta",
+    "cover": "img/latrempe.jpeg",
+    "clips": [
+      "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
+    ],
+    "linktree": "https://linktr.ee/beta",
+    "notes": "Un album expérimental aux sonorités électroniques et organiques.",
+    "link": "projet-beta"
+  },
+  {
+    "title": "Projet Gamma",
+    "id": "Gamma",
+    "cover": "img/latrempe.jpeg",
+    "clips": [
+      "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
+    ],
+    "linktree": "https://linktr.ee/gamma",
+    "notes": "Des collaborations uniques entre artistes de divers horizons.",
+    "link": "projet-gamma"
+  },
+  {
+    "title": "Projet Delta",
+    "id": "Delta",
+    "cover": "img/latrempe.jpeg",
+    "clips": [
+      "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
+    ],
+    "linktree": "https://linktr.ee/delta",
+    "notes": "Un EP qui revisite les classiques avec une touche moderne.",
+    "link": "projet-delta"
+  },
+  {
+    "title": "Projet Epsilon",
+    "id": "Epsilon",
+    "cover": "img/latrempe.jpeg",
+    "clips": [
+      "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
+    ],
+    "linktree": "https://linktr.ee/epsilon",
+    "notes": "Une immersion sonore unique entre l'analogique et le digital.",
+    "link": "projet-epsilon"
+  },
+  {
+    "title": "Projet Zeta",
+    "id": "Zeta",
+    "cover": "img/latrempe.jpeg",
+    "clips": [
+      "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
+    ],
+    "linktree": "https://linktr.ee/zeta",
+    "notes": "Un concept album basé sur les émotions humaines.",
+    "link": "projet-zeta"
+  }
+]

@@ -1,7 +1,7 @@
-<section class="flex center header">
-    <a class="pointer">Réalisations</a>
-    <a class="pointer">Tournée</a>
-    <a class="pointer header-logo"><img src="/img/logo3.png" alt="" class="header-logo-pict" /></a>
-    <a class="pointer">Vidéo</a>
-    <a class="pointer">Contact</a>
+<section class="flex center header" [class.scrolled]="isScrolled">
+    <!-- <a class="pointer">Réalisations</a>
+    <a class="pointer">Tournée</a> -->
+    <a routerLink="/home" class="pointer header-logo"><img src="/img/logo3.png" alt="" class="header-logo-pict" /></a>
+    <!-- <a class="pointer">Vidéo</a>
+    <a class="pointer">Contact</a> -->
 </section>

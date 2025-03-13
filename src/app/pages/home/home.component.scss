@@ -3,7 +3,7 @@
 
 .home {
     width: 100%;
-    padding-bottom: 80px;
+    // padding-bottom: 80px;
     background-image: url("https://www.transparenttextures.com/patterns/buried.png");
         background-attachment: fixed;
         background-position: center;
@@ -70,8 +70,9 @@
                     }
                 }
 
-                .btn {
+                a {
                     display: block;
+                    max-width: 250px;
                     margin: 15px auto 0;
                 }
             }
@@ -110,7 +111,8 @@
     &-collections {
         width: 100%;
         border-bottom: 100px solid $yellow;
-        padding: 30px 0 0;
+        padding: 150px 0 0;
+        // background-color: #000;
 
         &-title {
             margin-bottom: 50px;
@@ -122,35 +124,31 @@
             width: 100%;
             height: 400px;
             margin: 0;
-            border-bottom: 5px solid $yellow;
+            border-bottom: 1px solid $yellow;
             // padding: 0 0 15px;
 
             &:nth-child(even) {
                 flex-direction: row-reverse;
 
-                .cover {
-                    background-position: center;
+                .cover img {
+                    float: right !important;
                 }
             }
 
             &-block {
-                width: 40%;
+                width: 50%;
                 height: 100%;
 
                 &.cover {
-                    width: 60%;
-                    background-image: url('/img/espace.jpg');
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-attachment: fixed;
-                    background-position: left center;
-                }
+                    width: 50%;
+                    overflow: hidden;
 
-                &.cover2 {
-                    background-image: url('/img/oldschool.jpg');
-                }
-                &.cover3 {
-                    background-image: url('/img/desert.jpg');
+                    img {
+                        height: 100%;
+                        width: auto;
+                        margin: 0 auto;
+                        float: left;
+                    }
                 }
 
                 h3 {
@@ -201,13 +199,14 @@
                         box-shadow: 0 5px 9px rgba(#000, .5);
                         border: 0px solid transparent;
                         padding: 0;
+                        
                     }
 
                     hr {
                         width: 30%;
                     }
                     p {
-                        letter-spacing: 1.5px;
+                        letter-spacing: 1.1px;
                     }
                 }
 
@@ -216,7 +215,7 @@
                     width: 80%;
                     margin: 0 auto;
                     transition: .3s;
-                    border: 2px solid $white;
+                    border: 2px solid rgba($yellow, .3);
                     padding: 10px;
                 }
 
@@ -224,7 +223,7 @@
                     display: block;
                     width: 90%;
                     height: 1px;
-                    background: $white;
+                    background: rgba($yellow, .3);
                     margin: 25px auto;
                     transition: .3s;
                 }
@@ -234,9 +233,13 @@
                     font-size: 1.2rem;
                     white-space: nowrap;
                     transition: .3s;
+                    display: block;
+                    width: 100%;
+                    text-wrap: wrap;
+                    text-align: center;
                     
                     strong {
-                        color: goldenrod;
+                        // color: goldenrod;
                     }
                 }
             }
@@ -244,9 +247,9 @@
     }
 
     &-contact {
-        background-color: $white;
+        background-color: $black;
         color: $white;
-        padding: 50px 30px;
+        padding: 50px 30px 80px;
 
         h2 {
             color: $white;

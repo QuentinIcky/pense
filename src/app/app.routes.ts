@@ -6,6 +6,6 @@ import { ProjetsComponent } from './pages/projets/projets.component';
 export const routes: Routes = [
     {path: 'home', component: HomeComponent},
     {path: 'projets/:id', component: ProjetsComponent},
-    {path: 'collection/:collectionName', component: CollectionComponent},
+    {path: 'collections/:id', component: CollectionComponent},
     {path: '**', component: HomeComponent},
 ];

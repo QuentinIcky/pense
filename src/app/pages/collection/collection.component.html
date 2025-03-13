@@ -1,1 +1,32 @@
-<section class="collection"></section>
+<section class="flex column center collection" *ngIf="currentCollection">
+  <h2 class="collection-title title">{{currentCollection.title}}</h2>
+
+  <iframe height="315" [attr.src]="getYoutubeEmbedUrl(currentCollection.teaserEmbed)"
+    title="YouTube video player" frameborder="0" class="collection-teaser"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+  <img src="{{currentCollection.cover}}" alt="" class="collection-cover">
+
+  <p class="collection-note">{{currentCollection.notes}}</p>
+
+  <ul class="flex column center collection-album">
+    <li class="collection-album-item" *ngFor="let track of currentCollection.tracklist">
+      <iframe src="//www.beatstars.com/embed/track/?id=21744385" width="100%" height="140"
+        style="border: none;"></iframe>
+      <!-- <iframe [attr.src]="getYoutubeEmbedUrl(track.trackId)" width="100%" height="140" style="border: none;"></iframe> -->
+    </li>
+  </ul>
+
+  <a href="{{currentCollection.linktree}}" target="_blank" class="collection-link">Chope ta prod</a>
+
+  <h3 class="title collection-otherTitle">Autres collections</h3>
+
+  <ul class="flex center collection-others" *ngIf="allCollections.length">
+    <li class="collection-others-item pointer" *ngFor="let collection of allCollections"(click)="redirect(collection.link)">
+      <img src="{{collection.cover}}" alt="">
+      <h4>{{collection.title}}</h4>
+    </li>
+  </ul>
+</section>

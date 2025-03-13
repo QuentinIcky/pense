@@ -1,5 +1,5 @@
 import { Component, OnInit} from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
@@ -13,14 +13,15 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 })
 export class ProjetsComponent implements OnInit {
 
-  private allProjects = [];
+  private dataPath = 'data.json';
+  // private dataPath = '/assets/data.json';
+  public allProjects: Array<any> = [];
   public currentProject: any = null;
   private currentId: string | null = '';
 
-  constructor(private route: ActivatedRoute, private sanitizer: DomSanitizer) {}
+  constructor(private route: ActivatedRoute, private router: Router, private sanitizer: DomSanitizer) {}
 
   ngOnInit(): void {
-     // Récupérer le paramètre de l'URL
      this.route.paramMap.subscribe(params => {
       console.log(params);
       this.currentId = params.get('id');
@@ -30,11 +31,10 @@ export class ProjetsComponent implements OnInit {
   }
 
   private getData(): void {
-    fetch('data.json')
+    fetch(this.dataPath)
     .then(response => response.json())
     .then(data => {
-      this.allProjects = data;
-      console.log(this.allProjects);
+      this.allProjects = data[0].projects;
       this.getCurrentProjet();
     });
   }
@@ -46,6 +46,16 @@ export class ProjetsComponent implements OnInit {
         console.log('this.currentProject', this.currentProject);
       }
     })
+  }
+
+  public redirect(id: string): void {
+    console.log('----id ;', id);
+    this.router.navigate([`collections/${id}`]);
+  }
+
+  public shuffleAndPickThree<T>(array: T[]): T[] {
+    const shuffled = [...array].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, 3);
   }
   
   public getYoutubeEmbedUrl(clipId: string): SafeResourceUrl {

@@ -1,8 +1,7 @@
 @import '../../../styles/variables.scss';
 
 .project {
-  padding: 100px 30px;
-  border: 3px solid red;
+  padding: 150px 30px;
 
   &-title {
     font-size: 4rem;
@@ -63,5 +62,28 @@
     border: 2px solid #fff;
     padding: 15px 30px;
     margin: 30px auto;
+  }
+
+  &-otherTitle {
+    font-size: 3rem;
+    margin: 100px auto 50px;
+  }
+
+  &-others {
+    flex-wrap: wrap;
+    &-item {
+      margin: 0 20px 0;
+
+      img {
+        display: block;
+        width: 250px;
+      }
+
+      h4 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
   }
 }
