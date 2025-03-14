@@ -1,0 +1,337 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.home {
+  width: 100%;
+  padding-bottom: 80px;
+  background-image: url("https://www.transparenttextures.com/patterns/buried.png");
+  background-attachment: fixed;
+  background-position: center;
+
+  &-title {
+    font-size: 5rem;
+    color: $yellow;
+    text-align: center;
+
+    @media (max-width: 1024px) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &-first {
+    position: relative;
+    justify-content: center;
+    height: 100vh;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      min-height: 100vh;
+      margin-bottom: 50px;
+    }
+
+    &-block {
+      position: relative;
+      height: 100%;
+      width: 35%;
+      padding: 30px 40px;
+      text-align: right;
+
+      @media (max-width: 1024px) {
+        height: auto;
+      }
+
+
+      h1 {
+        font-size: 7rem;
+
+        @media (max-width: 1024px) {
+          font-size: 5rem;
+        }
+      }
+
+      h2 {
+        font-size: 5rem;
+
+        @media (max-width: 1024px) {
+          font-size: 3rem;
+        }
+
+        strong {
+          display: inline-block;
+          font-size: 4rem;
+          color: $yellow;
+
+          @media (max-width: 1024px) {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      &:last-child {
+        position: relative;
+        width: 65%;
+        z-index: 1;
+
+        @media (max-width: 1024px) {
+          width: 100%;
+        }
+      }
+
+      &-cover {
+        width: 100%;
+        max-width: 650px;
+        min-width: 350px;
+
+        @media (max-width: 1024px) {}
+      }
+
+      &-encart {
+        position: absolute;
+        right: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        max-width: 700px;
+        padding: 30px 15px;
+        background: rgba($black, .5);
+        border: 2px solid $yellow;
+        color: $white;
+        text-align: center;
+
+        @media (max-width: 1024px) {
+          position: static;
+          transform: none;
+          max-width: none;
+        }
+
+        p {
+          font-size: 1.2rem;
+
+          strong {
+            font-size: 1.5rem;
+          }
+        }
+
+        a {
+          display: block;
+          max-width: 250px;
+          margin: 15px auto 0;
+        }
+      }
+    }
+  }
+
+  &-about {
+    position: relative;
+    overflow: hidden;
+    padding: 90px 20px;
+
+    // background-color: $black;
+    @media (max-width: 1024px) {
+      padding: 50px 20px;
+    }
+
+    &-pict {
+      width: 250px;
+      height: 250px;
+      border-radius: 100%;
+    }
+
+    &-desc {
+      max-width: 600px;
+      font-size: 1.3rem;
+      color: $white;
+      margin: 30px auto 0;
+      font-weight: 400;
+      line-height: 1.6rem;
+
+      @media (max-width: 1024px) {
+        font-size: 1rem;
+      }
+
+      strong {
+        display: inline-block;
+        font-size: 2rem;
+        font-weight: bold;
+        color: goldenrod;
+
+        @media (max-width: 1024px) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  &-collections {
+    width: 100%;
+    border-bottom: 100px solid $yellow;
+    padding: 150px 0 0;
+    // background-color: #000;
+
+    &-title {
+      margin-bottom: 50px;
+    }
+
+    &-slide {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0;
+      border-bottom: 1px solid $yellow;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+
+        .cover img {
+          float: right !important;
+        }
+      }
+
+      &-block {
+        width: 100%;
+        height: 100%;
+        background-color: rgba($black, .5);
+
+        @media (max-width: 1024px) {
+          padding: 0 30px;
+        }
+
+        h3 {
+          font-size: 3rem;
+
+          strong {
+            display: inline-block;
+            font-weight: bold;
+            color: goldenrod;
+          }
+        }
+
+        p {
+          font-size: 1.2rem;
+          text-align: right;
+          margin: 15px auto 25px;
+          text-align: center;
+        }
+
+        .btn {
+          display: block;
+          margin: 10px auto 0;
+        }
+      }
+    }
+
+  }
+
+  &-news {
+    padding: 100px 20px;
+
+    @media (max-width: 1024px) {
+      padding: 50px 20px;
+    }
+
+
+    &-title {
+      text-align: center;
+    }
+
+    &-list {
+      flex-wrap: wrap;
+      margin-top: 50px;
+
+      &-item {
+        max-width: 25%;
+        margin: 0 15px 100px;
+        border: 3px solid transparent;
+        transition: .3s;
+
+        @media (max-width: 1024px) {
+          max-width: 100%;
+          margin: 0 0 30px;
+        }
+
+        &:hover {
+          transform: scale(1.05);
+
+          img {
+            box-shadow: 0 5px 9px rgba(#000, .5);
+            border: 0px solid transparent;
+            padding: 0;
+
+          }
+
+          hr {
+            width: 30%;
+          }
+
+          p {
+            letter-spacing: 1.1px;
+          }
+        }
+
+        img {
+          display: block;
+          width: 80%;
+          margin: 0 auto;
+          transition: .3s;
+          border: 2px solid rgba($yellow, .3);
+          padding: 10px;
+        }
+
+        hr {
+          display: block;
+          width: 90%;
+          height: 1px;
+          background: rgba($yellow, .3);
+          margin: 25px auto;
+          transition: .3s;
+        }
+
+        p {
+          text-align: center;
+          font-size: 1.2rem;
+          white-space: nowrap;
+          transition: .3s;
+          display: block;
+          width: 100%;
+          text-wrap: wrap;
+          text-align: center;
+
+          strong {
+            color: $yellow !important;
+          }
+        }
+      }
+    }
+  }
+
+  &-contact {
+    background-color: $black;
+    color: $white;
+    padding: 50px 30px 80px;
+
+    h2 {
+      color: $white;
+    }
+
+    &-words {
+      width: 100%;
+      max-width: 650px;
+    }
+
+    p {
+      font-size: 2rem;
+      margin: 40px auto;
+
+      @media (max-width: 1024px) {
+        margin: 20px auto;
+        font-size: 1.3rem;
+      }
+    }
+
+
+  }
+}
