@@ -1,5 +1,5 @@
 <section class="flex column center project" *ngIf="currentProject">
-  <h2 class="project-title title">{{currentProject.title}}</h2>
+  <h2 class="project-title title" [innerHtml]="currentProject.title"></h2>
 
   <img src="{{currentProject.cover}}" alt="" class="project-cover">
 
@@ -25,9 +25,9 @@
   <h3 class="title project-otherTitle">Autres projets</h3>
 
   <ul class="flex center project-others" *ngIf="allProjects.length">
-    <li class="project-others-item pointer" *ngFor="let project of shuffleAndPickThree(allProjects)"(click)="redirect(project.link)">
+    <li class="flex column center project-others-item pointer" *ngFor="let project of shuffleAndPickThree(allProjects)"(click)="redirect(project.link)">
       <img src="{{project.cover}}" alt="">
-      <h4>{{project.title}}</h4>
+      <h4 [innerHTML]="project.title"></h4>
     </li>
   </ul>
 </section>

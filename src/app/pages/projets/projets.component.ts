@@ -50,7 +50,7 @@ export class ProjetsComponent implements OnInit {
 
   public redirect(id: string): void {
     console.log('----id ;', id);
-    this.router.navigate([`collections/${id}`]);
+    this.router.navigate([`projets/${id}`]);
   }
 
   public shuffleAndPickThree<T>(array: T[]): T[] {

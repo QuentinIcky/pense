@@ -16,15 +16,15 @@ export class HeaderComponent {
   private scrollTimeout: any;
 
 
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    this.isScrolled = window.scrollY > 30;
-    clearTimeout(this.scrollTimeout);
+  // @HostListener('window:scroll', [])
+  // onWindowScroll() {
+  //   this.isScrolled = window.scrollY > 30;
+  //   clearTimeout(this.scrollTimeout);
 
-    // Supprime la classe après 1s d'inactivité
-    this.scrollTimeout = setTimeout(() => {
-      this.isScrolled = false;
-    }, 1000);
-  }
+  //   // Supprime la classe après 1s d'inactivité
+  //   this.scrollTimeout = setTimeout(() => {
+  //     this.isScrolled = false;
+  //   }, 1000);
+  // }
 
 }

@@ -5,6 +5,7 @@
       <h2>Peintre <strong class="uppercase">musical</strong></h2>
     </div>
     <div class="flex column center home-first-block">
+      <img src="{{collections[0].cover}}" alt="" class="home-first-block-cover" />
       <div class="home-first-block-encart">
         <p class="home-first-title">Découvre la collection <strong class="gagkline">«ESPACE»</strong></p>
         <a *ngIf="collections.length" routerLink="/collections/{{collections[0].link}}" class="btn">Découvrir</a>
@@ -24,13 +25,9 @@
 
   <div class="home-collections">
     <h2 class="home-collections-title home-title uppercase">Collections.</h2>
-    
-    <div class="flex center home-collections-slide"
-    *ngFor="let collection of collections"
-    (click)="redirect('collections', collection)">
-      <div class="home-collections-slide-block cover">
-        <img src="{{collection.cover}}" alt="">
-      </div>
+
+    <div class="flex center home-collections-slide" *ngFor="let collection of collections"
+      (click)="redirect('collections', collection)" style="background-image: url({{collection.cover}});">
       <div class="flex column center home-collections-slide-block">
         <h3 class="title uppercase">{{collection.title}} :</h3>
         <p>{{collection.notes}}</p>
@@ -45,9 +42,9 @@
     <h2 class="home-title uppercase home-news-title">Projets :</h2>
     <ul class="flex center home-news-list" *ngIf="projets">
       <li class="home-news-list-item pointer" (click)="redirect('projets', projet)" *ngFor="let projet of projets">
-        <img src="img/lachauffe.jpg" alt="la chauffe" />
+        <img src="{{projet.cover}}" alt="la chauffe" />
         <hr />
-        <p><strong>{{projet.title}}</strong></p>
+        <p [innerHTML]="projet.title"></p>
       </li>
     </ul>
   </div>

@@ -7,7 +7,7 @@
     width: 100%;
     justify-content: space-around;
     padding: 20px 15px;
-    background-color: $white;
+    background-color: #fff;
     border-bottom: 1px solid rgb($black, .3);
 
     &.scrolled {
@@ -22,21 +22,21 @@
         margin: 0 10px;
         transition: .3s;
 
-        &::after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 2px;
-            background-color: $black;
-            transition: .3s;
-        }
+        // &::after {
+        //     content: '';
+        //     display: block;
+        //     width: 0;
+        //     height: 2px;
+        //     background-color: $black;
+        //     transition: .3s;
+        // }
 
-        &:hover {
-            letter-spacing: 1px;
-            &::after {
-                width: 100%;
-            }
-        }
+        // &:hover {
+        //     letter-spacing: 1px;
+        //     &::after {
+        //         width: 100%;
+        //     }
+        // }
     }
 
     &-logo {
