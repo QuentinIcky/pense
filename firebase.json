@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "dignityandculture-pense",
+    "public": "dist/pense/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

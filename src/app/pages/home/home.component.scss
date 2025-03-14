@@ -12,8 +12,9 @@
     font-size: 5rem;
     color: $yellow;
     text-align: center;
+
     @media (max-width: 1024px) {
-        font-size: 3.5rem;
+      font-size: 3.5rem;
     }
   }
 
@@ -24,6 +25,8 @@
 
     @media (max-width: 1024px) {
       flex-direction: column;
+      min-height: 100vh;
+      margin-bottom: 50px;
     }
 
     &-block {
@@ -68,8 +71,9 @@
         position: relative;
         width: 65%;
         z-index: 1;
+
         @media (max-width: 1024px) {
-            width: 100%;
+          width: 100%;
         }
       }
 
@@ -78,8 +82,7 @@
         max-width: 650px;
         min-width: 350px;
 
-        @media (max-width: 1024px) {
-        }
+        @media (max-width: 1024px) {}
       }
 
       &-encart {
@@ -97,9 +100,9 @@
         text-align: center;
 
         @media (max-width: 1024px) {
-            position: static;
-            transform: none;
-            max-width: none;
+          position: static;
+          transform: none;
+          max-width: none;
         }
 
         p {
@@ -123,9 +126,10 @@
     position: relative;
     overflow: hidden;
     padding: 90px 20px;
+
     // background-color: $black;
     @media (max-width: 1024px) {
-        padding: 50px 20px;
+      padding: 50px 20px;
     }
 
     &-pict {
@@ -142,11 +146,19 @@
       font-weight: 400;
       line-height: 1.6rem;
 
+      @media (max-width: 1024px) {
+        font-size: 1rem;
+      }
+
       strong {
         display: inline-block;
         font-size: 2rem;
         font-weight: bold;
         color: goldenrod;
+
+        @media (max-width: 1024px) {
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -184,6 +196,10 @@
         height: 100%;
         background-color: rgba($black, .5);
 
+        @media (max-width: 1024px) {
+          padding: 0 30px;
+        }
+
         h3 {
           font-size: 3rem;
 
@@ -212,10 +228,11 @@
 
   &-news {
     padding: 100px 20px;
+
     @media (max-width: 1024px) {
-        padding: 50px 20px;
-      }
-    
+      padding: 50px 20px;
+    }
+
 
     &-title {
       text-align: center;
@@ -232,9 +249,9 @@
         transition: .3s;
 
         @media (max-width: 1024px) {
-            max-width: 100%;
-            margin: 0 0 30px ;
-          }
+          max-width: 100%;
+          margin: 0 0 30px;
+        }
 
         &:hover {
           transform: scale(1.05);
@@ -308,6 +325,7 @@
     p {
       font-size: 2rem;
       margin: 40px auto;
+
       @media (max-width: 1024px) {
         margin: 20px auto;
         font-size: 1.3rem;

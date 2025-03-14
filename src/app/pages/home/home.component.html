@@ -4,7 +4,7 @@
       <h1 class="uppercase">Pense.</h1>
       <h2>Peintre <strong class="uppercase">musical</strong></h2>
     </div>
-    <div class="flex column center home-first-block">
+    <div class="flex column center home-first-block" *ngIf="collections.length">
       <img src="{{collections[0].cover}}" alt="" class="home-first-block-cover" />
       <div class="home-first-block-encart">
         <p class="home-first-title">Découvre la collection <strong class="gagkline">«ESPACE»</strong></p>
