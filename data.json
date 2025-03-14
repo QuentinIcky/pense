@@ -1,0 +1,201 @@
+[{
+    "projects": [{
+        "title": "«La chauffe, La Trempe» By <strong>Papi Teddy Bear</strong>",
+        "id": "lclt",
+        "cover": "img/projets/lclt.jpg",
+        "clips": [
+          "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
+        ],
+        "linktree": "https://linktr.ee/alpha",
+        "notes": "Un projet innovant mélangeant plusieurs styles musicaux.",
+        "link": "lclt"
+      },
+      {
+        "title": "«Stardust» By <strong>Rob Donci</strong>",
+        "id": "stardust",
+        "cover": "img/projets/stardust.jpg",
+        "clips": [
+          "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
+        ],
+        "linktree": "https://linktr.ee/beta",
+        "notes": "Un album expérimental aux sonorités électroniques et organiques.",
+        "link": "stardust"
+      },
+      {
+        "title": "«Dignity & Culture» By <strong>Pense</strong>",
+        "id": "dc",
+        "cover": "img/projets/dc.jpg",
+        "clips": [
+          "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
+        ],
+        "linktree": "https://linktr.ee/gamma",
+        "notes": "Des collaborations uniques entre artistes de divers horizons.",
+        "link": "dc"
+      },
+      {
+        "title": "«La Nuit Sera Calme» By <strong>B.B; Jacques</strong>",
+        "id": "lnsc",
+        "cover": "img/projets/lnsc.JPG",
+        "clips": [
+          "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
+        ],
+        "linktree": "https://linktr.ee/delta",
+        "notes": "Un EP qui revisite les classiques avec une touche moderne.",
+        "link": "lnsc"
+      },
+      {
+        "title": "«Poésie d'une Pulsion» by <strong>B.B. Jacques</strong>",
+        "id": "pdp",
+        "cover": "img/projets/pdp.jpg",
+        "clips": [
+          "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
+        ],
+        "linktree": "https://linktr.ee/epsilon",
+        "notes": "Une immersion sonore unique entre l'analogique et le digital.",
+        "link": "pdp"
+      },
+      {
+        "title": "«La Litanie Des Horlas» By <strong>RapClub</strong>",
+        "id": "lldh",
+        "cover": "img/projets/lldh.jpg",
+        "clips": [
+          "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
+        ],
+        "linktree": "https://linktr.ee/zeta",
+        "notes": "Un concept album basé sur les émotions humaines.",
+        "link": "lldh"
+      },
+      {
+        "title": "«C'est pas du TAYC» by <strong>Mano Leyra</strong>",
+        "id": "Tayc",
+        "cover": "img/projets/C_estpasduTayc.jpeg",
+        "clips": [
+          "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
+        ],
+        "linktree": "https://linktr.ee/zeta",
+        "notes": "Un concept album basé sur les émotions humaines.",
+        "link": "tayc"
+      },
+      {
+        "title": "Placements annexes",
+        "id": "placements",
+        "cover": "img/projets/placements.jpg",
+        "clips": [
+          "jP-6rDjqKt0", "jP-6rDjqKt0", "jP-6rDjqKt0"
+        ],
+        "linktree": "https://linktr.ee/zeta",
+        "notes": "Un concept album basé sur les émotions humaines.",
+        "link": "placements"
+      }
+    ]
+  },
+  {
+    "collections": [
+      {
+        "title": "Collection 1",
+        "teaserEmbed": "0M84n-F5Ld0",
+        "id": "collection1",
+        "cover": "img/collections/space.jpg",
+        "linktree": "https://linktr.ee/epsilon",
+        "notes": "Une immersion sonore unique entre l'analogique et le digital.",
+        "link": "collection1",
+        "tracklist": [
+          {
+            "title": "Titre 1",
+            "trackId": "21744385"
+          },
+          {
+            "title": "Titre 2",
+            "trackId": "21744385"
+          },
+          {
+            "title": "Titre 3",
+            "trackId": "21744385"
+          },
+          {
+            "title": "Titre 4",
+            "trackId": "21744385"
+          },
+          {
+            "title": "Titre 5",
+            "trackId": "21744385"
+          },
+          {
+            "title": "Titre 6",
+            "trackId": "21744385"
+          }
+        ]
+      },
+      {
+        "title": "Collection 2",
+        "teaserEmbed": "0M84n-F5Ld0",
+        "id": "collection2",
+        "cover": "img/collections/nature.jpg",
+        "linktree": "https://linktr.ee/epsilon",
+        "notes": "Une immersion sonore unique entre l'analogique et le digital.",
+        "link": "collection2",
+        "tracklist": [
+          {
+            "title": "Titre 1",
+            "trackId": "21744385"
+          },
+          {
+            "title": "Titre 2",
+            "trackId": "21744385"
+          },
+          {
+            "title": "Titre 3",
+            "trackId": "21744385"
+          },
+          {
+            "title": "Titre 4",
+            "trackId": "21744385"
+          },
+          {
+            "title": "Titre 5",
+            "trackId": "21744385"
+          },
+          {
+            "title": "Titre 6",
+            "trackId": "21744385"
+          }
+        ]
+      },
+      {
+        "title": "Collection 3",
+        "teaserEmbed": "0M84n-F5Ld0",
+        "id": "collection3",
+        "cover": "img/collections/desert.jpg",
+        "linktree": "https://linktr.ee/epsilon",
+        "notes": "Une immersion sonore unique entre l'analogique et le digital.",
+        "link": "collection3",
+        "tracklist": [
+          {
+            "title": "Titre 1",
+            "trackId": "21744385"
+          },
+          {
+            "title": "Titre 2",
+            "trackId": "21744385"
+          },
+          {
+            "title": "Titre 3",
+            "trackId": "21744385"
+          },
+          {
+            "title": "Titre 4",
+            "trackId": "21744385"
+          },
+          {
+            "title": "Titre 5",
+            "trackId": "21744385"
+          },
+          {
+            "title": "Titre 6",
+            "trackId": "21744385"
+          }
+        ]
+      }
+    ]
+  }
+]
